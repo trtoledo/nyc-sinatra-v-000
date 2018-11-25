@@ -1,14 +1,14 @@
 class LandmarksController < ApplicationController
   # add controller methods
 
-  get '/lamdmarks' do
+  get '/landmarks' do
     @landmarks = Landmark.all
-    erb :'/landmarks/index.erb'
+    erb :'/landmarks/index'
   end
 
   get '/landmarks/new' do
-    erb :'/landmarks/new.erb'
+    erb :'/landmarks/new'
   end
 
-  
+
 end
