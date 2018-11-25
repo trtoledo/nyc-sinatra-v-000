@@ -1,7 +1,6 @@
 <h1>Add a New Figure</h1>
  <form action="/figures" method="POST">
   Name <input type="text" name="figure[name]" id="figure_name"> </br>
-   <!-- Song Name <input type="text" name="Name"> </br> -->
    <ul>
    <p>Titles <% Title.all.each do |title| %>
     <li><label><%= title.name %></label>
@@ -20,7 +19,7 @@
    <% end %></p>
     <label>Create New Landmark: </label>
     <br>
-    Name:<input type="text" name="landmark[name]" id="new_landmark">
+    Landmark Name:<input type="text" name="landmark[name]" id="new_landmark">
     Year:<input type="text" name="landmark[year_completed]" id="landmark_year_completed">
     <br>
 
