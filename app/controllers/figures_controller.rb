@@ -6,7 +6,7 @@ class FiguresController < ApplicationController
     erb :'/figures/index'
   end
 
-  get '/figures/new' do 
+  get '/figures/new' do
     erb :'/figures/new'
   end
 
@@ -24,7 +24,7 @@ class FiguresController < ApplicationController
 
   get '/figures/:id' do
     @figure = Figure.find(params[:id])
-    erb :'figures/show'
+    erb :'/figures/show'
   end
 
   get'/figures/:id/edit' do
