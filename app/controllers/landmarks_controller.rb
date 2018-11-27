@@ -4,7 +4,7 @@ class LandmarksController < ApplicationController
   get '/landmarks' do
     @landmarks = Landmark.all
     erb :'/landmarks/index'
-  end 
+  end
 
   get '/landmarks/new' do
     erb :'/landmarks/new'
@@ -32,7 +32,7 @@ class LandmarksController < ApplicationController
     erb :'/landmarks/edit'
   end
 
-  patch '/lanmarks/:id' do
+  patch '/landmarks/:id' do
     binding.pry 
     @landmark = Landmark.find(params [:id])
     @landmark.update(params[:landmark])
