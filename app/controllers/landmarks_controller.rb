@@ -33,8 +33,8 @@ class LandmarksController < ApplicationController
   end
 
   patch '/landmarks/:id' do
-    binding.pry
-    @landmark = Landmark.find(params [:id])
+    # binding.pry
+    @landmark = Landmark.find(params[:id])
     @landmark.update(params[:landmark])
     if !params[:figure][:name].empty?
       @landmark.figures << Figure.create(params[:figure])
